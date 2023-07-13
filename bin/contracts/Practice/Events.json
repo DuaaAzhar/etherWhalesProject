@@ -1,0 +1,257 @@
+{
+    "contractName": "Events",
+    "abi": [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "event1Created",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "event1",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"event1Created\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"event1\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/kryptomind/Documents/HardHat/ETHWhales/contracts/Practice/Events.sol\":\"Events\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kryptomind/Documents/HardHat/ETHWhales/contracts/Practice/Events.sol\":{\"keccak256\":\"0x51b9d9cd6cb02958d6607c24188697260384f2393830cef27de154cbe2629ddc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8a59296a6e26330f623c1883b00e29d156d8215bb50d3020b9b4d75d535a19f7\",\"dweb:/ipfs/QmZQbYJs3UjxWeqoVM1jE8h8WkCsLATwqPjsV8nr17yfYo\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5060c28061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806384e603ad14602d575b600080fd5b603c60383660046074565b603e565b005b6040518181527f1278ba7ce8530e04b650f66c7006efeff36b06ea749e0727165c4beb2ea077e69060200160405180910390a150565b600060208284031215608557600080fd5b503591905056fea2646970667358221220d8289b0783dfa3f046ea33ed61130f78067492eefdd7b6e3a502e48635972bba64736f6c634300080b0033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c806384e603ad14602d575b600080fd5b603c60383660046074565b603e565b005b6040518181527f1278ba7ce8530e04b650f66c7006efeff36b06ea749e0727165c4beb2ea077e69060200160405180910390a150565b600060208284031215608557600080fd5b503591905056fea2646970667358221220d8289b0783dfa3f046ea33ed61130f78067492eefdd7b6e3a502e48635972bba64736f6c634300080b0033",
+    "sourceMap": "60:145:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "60:145:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:87;;;;;;:::i;:::-;;:::i;:::-;;;174:22;;345:25:1;;;174:22:0;;333:2:1;318:18;174:22:0;;;;;;;116:87;:::o;14:180:1:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:1;;14:180;-1:-1:-1;14:180:1:o",
+    "sourcePath": "/home/kryptomind/Documents/HardHat/ETHWhales/contracts/Practice/Events.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.11+commit.d7f03943"
+    },
+    "ast": {
+        "absolutePath": "/home/kryptomind/Documents/HardHat/ETHWhales/contracts/Practice/Events.sol",
+        "exportedSymbols": {
+            "Events": [
+                16
+            ]
+        },
+        "id": 17,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "=",
+                    "0.8",
+                    ".11"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:25:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Events",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 16,
+                "linearizedBaseContracts": [
+                    16
+                ],
+                "name": "Events",
+                "nameLocation": "69:6:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "anonymous": false,
+                        "id": 5,
+                        "name": "event1Created",
+                        "nameLocation": "88:13:0",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 4,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 3,
+                                    "indexed": false,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 5,
+                                    "src": "102:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 2,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "102:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "101:9:0"
+                        },
+                        "src": "82:29:0"
+                    },
+                    {
+                        "body": {
+                            "id": 14,
+                            "nodeType": "Block",
+                            "src": "159:44:0",
+                            "statements": [
+                                {
+                                    "eventCall": {
+                                        "arguments": [
+                                            {
+                                                "id": 11,
+                                                "name": "_amount",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "188:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "id": 10,
+                                            "name": "event1Created",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 5,
+                                            "src": "174:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                                                "typeString": "function (uint256)"
+                                            }
+                                        },
+                                        "id": 12,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "174:22:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 13,
+                                    "nodeType": "EmitStatement",
+                                    "src": "169:27:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "84e603ad",
+                        "id": 15,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "event1",
+                        "nameLocation": "125:6:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 7,
+                                    "mutability": "mutable",
+                                    "name": "_amount",
+                                    "nameLocation": "140:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 15,
+                                    "src": "132:15:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 6,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "132:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "131:17:0"
+                        },
+                        "returnParameters": {
+                            "id": 9,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "159:0:0"
+                        },
+                        "scope": 16,
+                        "src": "116:87:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 17,
+                "src": "60:145:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:172:0"
+    },
+    "functionHashes": {
+        "event1(uint256)": "84e603ad"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "38800",
+            "executionCost": "93",
+            "totalCost": "38893"
+        },
+        "external": {
+            "event1(uint256)": "1258"
+        }
+    }
+}

@@ -1,0 +1,93 @@
+1- Node cannot be burned or paused once created, but minting new Nodes can be paued...
+
+2- Node Reward has specific interval
+
+3- Calculate Reward will return Reward from last interaction no matter if claim time is completed...
+
+4- Node reward can be compounded.
+
+5- Once node is Compunded into Vault, its Current Reward will be staked in vault.
+
+6- Vault allows stake in 3 methods   Direct ETHs/ Compound Node Reward/ Compound Vault Rewards...
+
+7- Can we return from Compound back in Node ???
+
+8- After compound where the next reward goes ???
+
+9- We cannot deposit Reward into distributor contract until we have atleast one staker, else DividendPerShare = 0
+
+10- After deployment, owner needs to Addliquidity to DEX, and call function "settransferenabled()".
+
+11- During Lauch tax period all the tAX in ETHS goes to ETHS contract.
+
+NODE CREATION deduction in NativeToken(NOT in AVAX)
+* 10% Burn
+* 10% Treasury
+* 75% RewardPool
+* 5% Marketing Wallet  (our requirement)
+
+NODE CLAIM deduction in NativeToken(NOT in AVAX)
+* 28% remains in pool because claim is transfered from reward pool
+
+NODE COMPOUND deduction in NativeToken(NOT in AVAX)
+* 18% deducted 
+
+Vault Deposit / Compound:
+Deposit amount Burn
+Withdraw amount Mint
+
+Pair created in ETHs contract...
+WAVAX / ETHs
+
+
+TRANSFER AND SELL FEE DEDUCTION...
+* Deduction in Native NativeToken
+* Swapped against AVAX
+* for Reflection, it is swapped with WETH
+
+
+----------------------------DEPLOYMENTS AND INITIALIZATIONS-----------------------------
+
+Initial distribution of coins...
+
+address(this) = 0
+
+totalSupply = 5000000
+
+
+
+totalSupply= 4484638.3
+circulatorySupply = 1581038.3
+rewardpool = 2903600
+liquidityfeeReceiver = 1561738.3
+marketingfeeReceiver = 0
+treasury wallet = 19200
+
+
+----------------------- 
+
+totalSupply = 5000000
+reward pool = 2750000
+teamWallet =  250000
+circulatorySupply = totalSupply - rewardpool
+circulatorySupply = 2250000
+#For remaining 2M supply
+treasurywallet = 2M - presaleTokens Sold
+
+-----------------------
+
+
+Verified Cases in Contrat Audit:
+Contract "QETHW"
+1- Minting and Burning by Presale Contract only.
+Contract "PreSale"
+1- Purchase only One option
+2- Try to exceed purchase limit
+3- try to purchase multiple Nodes
+4- QETH to ETHW Conversions
+5- Presale node to Bluewhale Conversion
+6- Multiple time token conversions
+7- Multiple time Node conversions Repeat Conversions
+8- Withdraw DAI tokens
+9- Withdraw ETHW token if incase stuck in Contract
+10- checks for presale start, stop, conversion enable/disable. 
